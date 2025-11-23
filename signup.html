@@ -18,79 +18,57 @@
     <link rel="stylesheet" href="CSS/login.css">
 </head>
 <body>
-    <form method="post" >
-        <table align="center">
-            <caption>
-                <h2>
-                    Register Here
-                </h2>
-            </caption>
-            <tr>
-                <th>
-                    <label for="Fname">First Name</label>
-                </th>
-                <td>
-                    <input type="text" name="fname" id="Fname">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="Lname">Last name</label>
-                </th>
-                <td>
-                    <input type="text" name="lname" id="Lname">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="email">Email</label>
-                </th>
-                <td>
-                    <input type="email" name="Email" id="email">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="phno">Phone no</label>
-                </th>
-                <td>
-                    <input type="number" name="phone" id="phno">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="gender">Gender</label>
-                </th>
-                <td>
-                    <input type="radio" name="gender" id="gender" value="Male">Male
-                    <input type="radio" name="gender" id="gender" value="Female">Female
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="Pass">Password</label>
-                </th>
-                <td>
-                    <input type="password" name="pass" id="Pass">
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    <label for="Cpass"> Confirm Password</label>
-                </th>
-                <td>
-                    <input type="password" name="Cpass" id="Cpass">
-                </td>
-            </tr>
-            <tr>
-               <td></td>
-               <td>
-                <input type="submit" value="Register" class="logi">
-                
-               </td> 
-            </tr>
-        </table>
-    </form>
+    <section class="signup-form">
+        <div class="form">
+            <h3>SignUp</h3>
+            <form method="post" >
+            <div>
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div>
+                <input type="tel" placeholder="Mobile Number">
+            </div>
+            <div>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div>
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+            <div>
+                <input type="checkbox" id="check" required>
+                I agree that I am above 18 years of age.
+            </div>
+            <div>
+                <button type="submit">Create Account</button>
+            </div>
+             <div id="acc">
+                <a  href="login.html">Already have an account? Sign in.</a>
+                <a href="home.html">/  Go Back</a>
+            </div>
+
+            <!-- seperation -->
+
+            <div class="seper-box">
+                <div class="seper"></div>
+                <p>OR  </p>
+                <div class="seper"></div>
+            </div>
+
+            <div class="form-btns">
+                <a href="#">Google</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+            </div>
+           
+        </form>
+        </div>
+    </section>
+        
+
+    <!--  -->
 </body>
 </html>
 
